@@ -457,6 +457,7 @@
           </ul>
         </div>
         <div class="footer-form">
+          <p class="footer-form-text">Підпишіться на розсилку</p>
           <form action="#" class="footer-email-input">
             <label for="mail">E-mail</label>
             <input type="email" name="mail" id="mail" />
@@ -475,21 +476,47 @@
         </button>
         <div class="response-block">
           <form class="response-form" action="#" name="response-form">
-            <fieldset>
-              <legend>
-                <p class="response-block-title">
-                  Залиште свої дані, ми вам передзвонимо
-                </p>
-              </legend>
-              <label for="visitor-name">Ім'я</label>
-              <input id="visitor-name" type="text" name="visitor-name" />
+            <h2 class="response-title">
+              Залиште свої дані, ми вам передзвонимо
+            </h2>
+            <label class="response-label" for="visitor-name">Ім'я</label>
+            <div class="response-field">
+              <input
+                class="response-input"
+                id="visitor-name"
+                type="text"
+                name="visitor-name"
+              />
+              <svg class="response-input-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-form-name"></use>
+              </svg>
+            </div>
 
-              <label for="visitor-phone">Телефон</label>
-              <input id="visitor-phone" type="tel" name="visitor-phone" />
+            <label class="response-label" for="visitor-phone">Телефон</label>
+            <div class="response-field">
+              <input
+                class="response-input"
+                id="visitor-phone"
+                type="tel"
+                name="visitor-phone"
+              />
+              <svg class="response-input-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-form-phone"></use>
+              </svg>
+            </div>
 
-              <label for="visitor-mail">Пошта</label>
-              <input id="visitor-mail" type="email" name="visitor-mail" />
-            </fieldset>
+            <label class="response-label" for="visitor-email">Пошта</label>
+            <div class="response-field">
+              <input
+                class="response-input"
+                id="visitor-email"
+                type="email"
+                name="visitor-email"
+              />
+              <svg class="response-input-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-form-email"></use>
+              </svg>
+            </div>
 
             <label for="visitor-comment">Коментар</label>
             <textarea
