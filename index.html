@@ -473,6 +473,38 @@
             <use href="./images/icons.svg#icon-modal-close-btn"></use>
           </svg>
         </button>
+        <div class="response-block">
+          <form class="response-form" action="#" name="response-form">
+            <fieldset>
+              <legend>
+                <p class="response-block-title">
+                  Залиште свої дані, ми вам передзвонимо
+                </p>
+              </legend>
+              <label for="visitor-name">Ім'я</label>
+              <input id="visitor-name" type="text" name="visitor-name" />
+
+              <label for="visitor-phone">Телефон</label>
+              <input id="visitor-phone" type="tel" name="visitor-phone" />
+
+              <label for="visitor-mail">Пошта</label>
+              <input id="visitor-mail" type="email" name="visitor-mail" />
+            </fieldset>
+
+            <label for="visitor-comment">Коментар</label>
+            <textarea
+              name="visitor-comment"
+              placeholder="Введіть текст"
+            ></textarea>
+
+            <label for="visitor-policy"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#">Умови договору</a></label
+            >
+            <input id="visitor-policy" type="checkbox" name="visitor-policy" />
+          </form>
+          <button class="response-form-btn" type="submit">Відправити</button>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
