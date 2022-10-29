@@ -458,10 +458,20 @@
         </div>
         <div class="footer-form">
           <p class="footer-form-text">Підпишіться на розсилку</p>
-          <form action="#" class="footer-email-input">
-            <label for="mail">E-mail</label>
-            <input type="email" name="mail" id="mail" />
-            <button class="footer-email-btn" type="submit">Підписатися</button>
+          <form action="#" class="footer-form-field">
+            <label class="footer-form-label" for="mail">E-mail</label>
+            <input
+              class="footer-form-input"
+              type="email"
+              name="mail"
+              id="mail"
+            />
+            <button class="footer-form-btn button" type="submit">
+              <span>Підписатися</span>
+              <svg class="footer-form-btn-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-form-btn-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -521,6 +531,7 @@
             <label for="visitor-comment">Коментар</label>
             <textarea
               name="visitor-comment"
+              rows="5"
               placeholder="Введіть текст"
             ></textarea>
 
