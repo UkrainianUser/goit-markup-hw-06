@@ -535,24 +535,26 @@
             <textarea
               class="visitor-comment-area"
               name="visitor-comment"
+              id="visitor-comment"
               placeholder="Введіть текст"
             ></textarea>
 
-            <input
-              class="visitor-policy-input"
-              id="visitor-policy"
-              type="checkbox"
-              name="visitor-policy"
-            />
-            <label class="visitor-policy-label" for="visitor-policy">
+            <label class="visitor-policy-label">
+              <input
+                class="visitor-policy-input"
+                type="checkbox"
+                name="visitor-policy"
+              />
               <span class="visitor-checkbox"></span>
               <span class="visitor-text"
                 >Погоджуюся з розсилкою та приймаю
               </span>
-              <a href="#">Умови договору</a></label
+              <a class="visitir-link" href="#">Умови договору</a></label
             >
           </form>
-          <button class="response-form-btn" type="submit">Відправити</button>
+          <button class="response-form-btn button" type="submit">
+            Відправити
+          </button>
         </div>
       </div>
     </div>

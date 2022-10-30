@@ -647,6 +647,10 @@ img {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	cursor: pointer;
+	transition:	fill 250ms var(--timing-function);
+}
+.modal-btn:hover .modal-icon-close{
+	fill: var(--accent-color);
 }
 .modal-icon-close {
 	position: absolute;
@@ -695,6 +699,12 @@ img {
 	font: inherit;
 	border: 1px solid var(--input-border-color);
 	border-radius: 4px;
+	cursor: pointer;
+}
+.response-input:hover,
+.response-input:focus {
+	border-color: var(--accent-color);
+	transition:	border-color 250ms var(--timing-function);
 }
 .response-input-icon {
 	position: absolute;
@@ -703,6 +713,11 @@ img {
 	transform: translateY(-50%);
 	fill: currentColor;
 	pointer-events: none;
+	transition:	fill 250ms var(--timing-function);
+}
+.response-input:hover + .response-input-icon,
+.response-input:focus + .response-input-icon {
+	fill: var(--accent-color);
 }
 .visitor-comment-area {
 	width: 100%;
@@ -721,6 +736,7 @@ img {
 .visitor-policy-label {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 7px;
 }
 .visitor-checkbox {
@@ -729,6 +745,12 @@ img {
 	height: 15px;
 
 	background-image: url(../images/checkbox.svg);
+}
+.visitor-policy-input:checked ~ .visitor-checkbox {
+	background-image: url(../images/checkbox-checked.svg);
+}
+.visitir-link {
+	color: var(--accent-color)
 }
 .response-form-btn {
 	display: block;
@@ -748,4 +770,9 @@ img {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	transition:	background-color 250ms var(--timing-function),
 	box-shadow 250ms var(--timing-function);
+}
+.response-form-btn:hover {
+	background: var(--active-btn-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
 }
